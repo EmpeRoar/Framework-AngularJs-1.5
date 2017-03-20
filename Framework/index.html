@@ -10,7 +10,12 @@
 
 
 
+
     <script src="Scripts/jquery-2.1.3.min.js"></script>
+
+   
+
+
     <script src="Scripts/angular.min.js"></script>
     <script src="Scripts/angular-animate.min.js"></script>    
     <script src="Scripts/angular-route.min.js"></script>
@@ -24,7 +29,7 @@
 
     <script src="ext-modules/psDashboard/psDashboardModule.js"></script>
     <script src="ext-modules/psDashboard/psDashboardDirective.js"></script>
-
+    <script src="ext-modules/psDashboard/psWidgetBodyDirective.js"></script>
 
     <script src="ext-modules/psFramework/psFrameworkModule.js"></script>
     <script src="ext-modules/psFramework/psFrameworkController.js"></script>
@@ -37,6 +42,7 @@
     <script src="app/directives/wwaDashboardDirective.js"></script>
     <script src="app/directives/wwaGuidesDirective.js"></script>
     <script src="app/directives/wwaLocationDirective.js"></script>
+    <script src="app/services/dataService.js"></script>
 
     <link href="app/app.css" rel="stylesheet" />
     <link href="ext-modules/psMenu/psMenu.css" rel="stylesheet" />
@@ -44,6 +50,23 @@
     <link href="ext-modules/psDashboard/psDashboard.css" rel="stylesheet" />
 
 
+    <!-- widgets css -->
+    <link href="app/widgets/wwaEmployee/wwaEmployee.css" rel="stylesheet" />
+    <link href="app/widgets/wwaInventory/wwaInventory.css" rel="stylesheet" />
+    <link href="app/widgets/wwaTemperature/wwaTemperature.css" rel="stylesheet" />
+
+    <!-- widgets Javascript files -->
+    <script src="app/widgets/wwaEmployee/wwaEmployeeDirective.js"></script>
+    <script src="app/widgets/wwaInventory/wwaInventoryDirective.js"></script>
+    <script src="app/widgets/wwaTemperature/wwaTemperatureDirective.js"></script>
+
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+
+
+
+    <script src="app/dialogs/wwaSelectEmployeeController.js"></script>
+    <script src="app/dialogs/wwaSelectLocationController.js"></script>
 </head>
 <body class="container-fluid">
     <ps-framework title="Whitewater Adventures"
