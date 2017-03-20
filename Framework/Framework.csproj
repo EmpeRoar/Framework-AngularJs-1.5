@@ -95,6 +95,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\appRouteConfig.js" />
+    <Content Include="app\dialogs\wwaSelectEmployeeController.js" />
+    <Content Include="app\dialogs\wwaSelectEmployeeTemplate.html" />
+    <Content Include="app\dialogs\wwaSelectLocationController.js" />
+    <Content Include="app\dialogs\wwaSelectLocationTemplate.html" />
     <Content Include="app\directives\wwaDashboardDirective.js" />
     <Content Include="app\directives\wwaGuidesDirective.js" />
     <Content Include="app\directives\wwaLocationDirective.js" />
