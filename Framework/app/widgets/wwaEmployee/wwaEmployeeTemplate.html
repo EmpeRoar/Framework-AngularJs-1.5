@@ -5,18 +5,16 @@
         <span class="www-employee-title">Employee</span>
     </div>
 
-    <div class="wwa-employee-body" >
+    <div class="wwa-employee-body" style="background-image: url(/images/{{ selectedEmployee.image }}); ">
         <div class="wwa-employee-row">
             <div class="wwa-employee-name-area">
                 {{ selectedEmployee.name }}
             </div>
             <div class="wwa-employee-degrees">
-                {{ selectedEmployee.location }}°
+                {{ selectedEmployee.location }}
             </div>
 
-            <div class="wwa-employee-picture-area" style="background-image: url(/images/{{ selectedEmployee.image }})"> 
-
-            </div>
+            
         </div>
 
     </div>

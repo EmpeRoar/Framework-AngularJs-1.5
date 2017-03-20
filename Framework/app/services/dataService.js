@@ -41,7 +41,7 @@ angular.module('app').factory('dataService',
                 }, 500);
             };
 
-            var getLocation = function () {
+            var getLocation = function (id) {
                 return $timeout(function () {
                     for (var i = 0; i < locations.length; i++)
                         if (locations[i].id == id)
@@ -57,11 +57,11 @@ angular.module('app').factory('dataService',
                 }, 500);
             };
 
-            var getEmployee = function () {
+            var getEmployee = function (id) {
                 return $timeout(function () {
                     for (var i = 0; i < employees.length; i++)
                         if (employees[i].id == id)
-                            return locations[i];
+                            return employees[i];
                     return undefined;
 
                 }, 300);

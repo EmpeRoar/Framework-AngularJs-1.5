@@ -112,6 +112,8 @@
     <Content Include="ext-modules\psDashboard\psDashboard.css" />
     <Content Include="ext-modules\psDashboard\psDashboardDirective.js" />
     <Content Include="ext-modules\psDashboard\psDashboardTemplate.html" />
+    <Content Include="ext-modules\psDashboard\psWidgetBodyDirective.js" />
+    <Content Include="ext-modules\psDashboard\psWidgetBodyTemplate.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
