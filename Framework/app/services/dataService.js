@@ -32,6 +32,12 @@ angular.module('app').factory('dataService',
                     name: 'Andy Chatterton',
                     location: 'Raquette River',
                     image: 'pic.jpg'
+                },
+                {
+                    id: 5001,
+                    name: 'Julius Bacosa',
+                    location: 'Raquette River',
+                    image: 'pic2.jpg'
                 }
             ];
 
