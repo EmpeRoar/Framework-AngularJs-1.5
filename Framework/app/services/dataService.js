@@ -32,6 +32,12 @@ angular.module('app').factory('dataService',
                     name: 'Andy Chatterton',
                     location: 'Raquette River',
                     image: 'pic.jpg'
+                },
+                {
+                    id: 5001,
+                    name: 'Julius Bacosa',
+                    location: 'Raquette River',
+                    image: 'pic2.jpg'
                 }
             ];
 
@@ -42,19 +48,23 @@ angular.module('app').factory('dataService',
             };
 
             var getLocation = function (id) {
-                return $timeout(function () {
+                var timeout = $timeout(function () {
+                    //$timeout.cancel(timeout);
+                    //return undefined;
+
                     for (var i = 0; i < locations.length; i++)
                         if (locations[i].id == id)
                             return locations[i];
                     return undefined;
-
                 }, 300);
+
+                return timeout;
             };
 
             var getEmployees = function () {
                 return $timeout(function () {
                     return employees; 
-                }, 500);
+                }, 200);
             };
 
             var getEmployee = function (id) {

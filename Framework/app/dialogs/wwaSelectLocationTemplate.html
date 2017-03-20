@@ -3,7 +3,9 @@
 </div>
 <div class="modal-body">
     <h3>Name</h3>
-    <select ng-show="isLoaded" ng-model="selectedLocation" ng-options="location.name for location in locations"></select>
+    <select ng-show="isLoaded" 
+            ng-model="selectedLocation" 
+            ng-options="location.name for location in locations"></select>
 </div>
 <div class="modal-footer">
     <button type="button" class="btn btn-primary" ng-click="saveSettings()">Ok</button>

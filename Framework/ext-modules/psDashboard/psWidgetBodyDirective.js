@@ -1,8 +1,8 @@
 ﻿"use strict";
 
 angular.module('psDashboard').directive('psWidgetBody',
-    ['$compile',
-        function ($compile) {
+    ['$compile', '$uibModal',
+        function ($compile, $uibModal) {
             return {
                 templateUrl: 'ext-modules/psDashboard/psWidgetBodyTemplate.html',
                 link: function (scope, element, attrs) {
@@ -20,8 +20,15 @@ angular.module('psDashboard').directive('psWidgetBody',
                             controller: scope.item.widgetSettings.controller,
                             scope: scope
                         }
-                        console.log(options);
+                        
+                        $uibModal.open(options)
                     }
+
+                    scope.iconClicked = function () {
+                        // empty body.
+                        // this function is used by the ng-click in the template
+                        // so that icon clicks aren't intercepted by widgets
+                    };
                     
                 }
             };
